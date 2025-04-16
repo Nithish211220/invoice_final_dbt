@@ -4,5 +4,7 @@ select
   invoicedate,
   currency,
   invoiceamount,
+  Tax,
+  Credit,
   productname
 from {{ source('snowflake_source', 'INVOICES') }}
